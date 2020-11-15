@@ -11,7 +11,7 @@ using namespace CVD;
 
 MapViewer::MapViewer(Map &map, GLWindow2 &glw) :
         mMap(map), mGLWindow(glw) {
-    mse3ViewerFromWorld = SE3<>::exp(makeVector(-0.3, 0, 1.1, 0, 0, 0)) * SE3<>::exp(makeVector(0, 0, 0, 0.8 * M_PI, 0, 0));
+    mse3ViewerFromWorld = SE3<>::exp(makeVector(0, 0, 5, 0, 0, 0)) * SE3<>::exp(makeVector(0, 0, 0, 0.8 * M_PI, 0, 0));
 }
 
 void MapViewer::DrawMapDots() {
